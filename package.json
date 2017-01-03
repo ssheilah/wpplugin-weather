@@ -1,0 +1,14 @@
+{
+  "name": "wsuwp-weather",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssheilah/wpplugin-weather"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-jscs": "^3.0.1",
+    "grunt-phpcs": "^0.4.0"
+  }
+}

@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+}
+
+.content-box {
+  background-color: #fff;
+  opacity: .7;  
+}
+
+/* background images */
+
+.mist {
+  background-image: url("https://images.unsplash.com/photo-1478399305562-fbc9c0adb0e6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=03947619d15631a5e31f33254d3a5b1a");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rain {
+  background-image: url("https://images.unsplash.com/photo-1449175334484-66563eaeec14?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=4e4015e5dbcdf7073b93fb2a82cb51fd");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.snow {
+  background-image: url("https://images.unsplash.com/photo-1431036101494-66a36de47def?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=7bea41602458b7f44ccac42abf12be46");  
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sun {
+  background-image: url("https://images.unsplash.com/photo-1447601932606-2b63e2e64331?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=328e12f4d809200557ef01e2dd614668");  
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clouds {
+  background-image: url("https://images.unsplash.com/photo-1475614831761-6da544fd95e1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=d373cd980124062daf26a911579fe8cd");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.scattered-clouds {
+  background-image: url("https://images.unsplash.com/photo-1447366346205-df5c31d54fab?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=eb59d5fb577c54c3be2adb957aa56240");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-photo {
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, white, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, white, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, white, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, white, yellow); /* Standard syntax */
+}

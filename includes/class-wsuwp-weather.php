@@ -26,6 +26,22 @@ class WSUWP_Weather {
 	 * Setup hooks to include.
 	 *
 	 * @since 0.0.1
-	 */
-	public function setup_hooks() {}
+	*/
+	public function setup_hooks() {
+
+		add_shortcode('weather', 'weather_shortcode');
+		add_action( 'wp_enqueue_scripts', array( $this, 'wsuf_weather_enqueue_scripts' ), 99 );
+
+		function weather_shortcode(){
+    		return '<h1>Hello world!</h1>';
+		}
+
+	}
+
+	/* Enqueues JavaScript and CSS files
+	*/
+	function wsuf_weather_enqueue_scripts() {
+		wp_enqueue_script( 'wsuf_weather', plugins_url( '/weather-js.js', __FILE__ ), array( 'jquery' ), '1.0', true );
+		wp_enqueue_style( 'wsuf_style', plugins_url( 'css/style.css', dirname( __FILE__ ) ), array( 'spine-theme' ), null );
+	}
 }

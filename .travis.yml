@@ -1,4 +1,4 @@
-anguage: php
+language: php
 
 notifications:
   email:
@@ -6,9 +6,9 @@ notifications:
     on_failure: change
   slack:
     rooms:
-      - wsu-ucomm:n2TLZRJd84rMOMbkKthSEMgS
-    on_success: change
-    on_failure: always
+
+    on_success: never
+    on_failure: never
     on_start: never
 
 branches:

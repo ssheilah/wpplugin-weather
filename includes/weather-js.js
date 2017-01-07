@@ -1,6 +1,9 @@
-$(document).ready(function() {
+(function($){
 
-  getLocation();
+  $(document).ready(function() {
+
+
+    getLocation();
 
   function getLocation() {
     $.get("http://ipinfo.io", function(location) {
@@ -27,19 +30,19 @@ $(document).ready(function() {
         var temperatureC = (temperature - 273).toFixed(0);
         var rainx = conditions.toLowerCase().match(/rain/g);
         if (conditions === "MIST" || conditions === "FOG") {
-          $("body").addClass('mist');
+          $(".photobox").addClass('mist');
          } else if (conditions === "SUN" || conditions === "CLEAR SKY") {
-          $("body").addClass('sun');
+          $(".photobox").addClass('sun');
         } else if (conditions === "SNOW") {
-          $("body").addClass('snow'); 
+          $(".photobox").addClass('snow'); 
         } else if (conditions === "CLOUDS" || conditions === "OVERCAST CLOUDS") {
-          $("body").addClass('clouds');
+          $(".photobox").addClass('clouds');
         } else if (conditions === "SCATTERED CLOUDS" || conditions === "FEW CLOUDS" || conditions === "BROKEN CLOUDS") {   
-          $("body").addClass('scattered-clouds');
+          $(".photobox").addClass('scattered-clouds');
         } else if (rainx !== "") {
-          $("body").addClass('rain');       
+          $(".photobox").addClass('rain');       
         } else {
-          $("body").addClass('no-photo');
+          $(".photobox").addClass('no-photo');
         }
         $('#k-button').click(function() {
           $("#temperatureF").hide();
@@ -70,3 +73,6 @@ $(document).ready(function() {
     }
   }
 });
+
+}(jQuery));
+

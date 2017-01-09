@@ -27,6 +27,3 @@ add_action( 'after_setup_theme', 'WSUWP_Weather' );
 function WSUWP_Weather() {
 	return WSUWP_Weather::get_instance();
 }
-
-
- 
